@@ -13,9 +13,26 @@ void setup(){
   }
 }
 
-void play(){
-    
+void draw(){
 }
+  
+
+void mouseClicked(){
+  if (pmouseX > 50 && pmouseX < 100){
+    //puts a new ellipse on this loc with a random color
+    fill(color(random(255), random(255), random(255)));
+    ellipse(50, 50, 50, 50);
+  }
+}
+
+
+/*void play(){
+    
+  if (mouseClicked()) {
+    
+  }
+  
+}*/
 
 
 
