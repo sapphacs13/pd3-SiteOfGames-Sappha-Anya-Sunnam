@@ -20,16 +20,17 @@ void draw(){
   
 
 void mouseClicked(){
+  
   if (pmouseX > 50 && pmouseX < 100){
-    //puts a new ellipse on this loc with a random color
-    if(yourturn == true) {
-      fill (color (255,255,255));
-    }
-    else {
-      //CHANGE THIS TO RED
+    if (yourturn == true) {
+      fill (color (255,0,0));
+  }
+  else {
       fill(color(0,0,0));
-    }
+  }
+    //puts a new ellipse on this loc
     ellipse(75, 75, 40, 40);
+    
   }
 }
 
