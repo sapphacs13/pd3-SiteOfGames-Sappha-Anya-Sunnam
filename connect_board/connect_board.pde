@@ -1,4 +1,6 @@
 
+//true if it's the users turn (not the computers)
+boolean yourturn = false;
 
 void setup(){
   //setup background
@@ -20,8 +22,14 @@ void draw(){
 void mouseClicked(){
   if (pmouseX > 50 && pmouseX < 100){
     //puts a new ellipse on this loc with a random color
-    fill(color(random(255), random(255), random(255)));
-    ellipse(50, 50, 50, 50);
+    if(yourturn == true) {
+      fill (color (255,255,255));
+    }
+    else {
+      //CHANGE THIS TO RED
+      fill(color(0,0,0));
+    }
+    ellipse(75, 75, 40, 40);
   }
 }
 
