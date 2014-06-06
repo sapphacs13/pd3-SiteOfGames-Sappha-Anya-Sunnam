@@ -30,7 +30,7 @@ void draw(){
   
 
 void mouseClicked(){
-  if (mouseX > 50 && mouseX < 100){
+  if (mouseX > 50 && mouseX < 100 && c1.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -42,7 +42,7 @@ void mouseClicked(){
     ellipse(76, 325-(c1.size()*50), 40, 40);
     c1.add(p);
   }
-  if (mouseX > 100 && mouseX < 150){
+  if (mouseX > 100 && mouseX < 150 && c2.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -54,7 +54,7 @@ void mouseClicked(){
     ellipse(126, 325-(c2.size()*50), 40, 40);
     c2.add(p);
   }
-  if (mouseX > 150 && mouseX < 200){
+  if (mouseX > 150 && mouseX < 200 && c3.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -66,7 +66,7 @@ void mouseClicked(){
     ellipse(176, 325-(c3.size()*50), 40, 40);
     c3.add(p);
   }
-  if (mouseX > 200 && mouseX < 250){
+  if (mouseX > 200 && mouseX < 250 && c4.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -78,7 +78,7 @@ void mouseClicked(){
     ellipse(226, 325-(c4.size()*50), 40, 40);
     c4.add(p);
   }
-  if (mouseX > 250 && mouseX < 300){
+  if (mouseX > 250 && mouseX < 300 && c5.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -90,7 +90,7 @@ void mouseClicked(){
     ellipse(276, 325-(c5.size()*50), 40, 40);
     c5.add(p);
   }
-  if (mouseX > 300 && mouseX < 350){
+  if (mouseX > 300 && mouseX < 350 && c6.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
@@ -102,7 +102,7 @@ void mouseClicked(){
     ellipse(326, 325-(c6.size()*50), 40, 40);
     c6.add(p);
   }
-  if (mouseX > 350 && mouseX < 400){
+  if (mouseX > 350 && mouseX < 400 && c7.size() < 6){
     if(yourturn == true) {
       fill (color (255, 255, 255));
     }
