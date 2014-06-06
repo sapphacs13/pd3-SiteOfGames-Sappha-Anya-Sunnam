@@ -1,6 +1,8 @@
 
 //true if it's the users turn (not the computers)
-boolean yourturn = false;
+boolean yourturn = true;
+int numRed = 0;
+int numBlack = 0;
 ArrayList<Piece> c1 = new ArrayList<Piece>();
 ArrayList<Piece> c2 = new ArrayList<Piece>();
 ArrayList<Piece> c3 = new ArrayList<Piece>();
@@ -26,16 +28,25 @@ void setup(){
 }
 
 void draw(){
+  
+  if (numBlack > numRed){
+    yourturn = true;
+  }
+  else{
+    yourturn = false;
+  }
+  
 }
   
 
 void mouseClicked(){
   if(yourturn == true) {
-    fill (color (255, 255, 255));
+    fill (color (0, 0, 0));
+    numRed ++;
   }
   else {
-    //CHANGE THIS TO RED
     fill(color(255, 0, 0));
+    numBlack ++;
   }
   if (mouseX > 50 && mouseX < 100 && c1.size() < 6){
     Piece p = new Piece();
