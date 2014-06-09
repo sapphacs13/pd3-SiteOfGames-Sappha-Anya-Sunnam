@@ -1,4 +1,5 @@
 //true if it's the users turn (not the computers)
+<<<<<<< HEAD
 boolean yourturn;
 int numRed;
 int numBlack;
@@ -10,6 +11,18 @@ ArrayList<Piece> c5;
 ArrayList<Piece> c6;
 ArrayList<Piece> c7;
 
+=======
+  boolean yourturn = true;
+  int numRed = 0;
+  int numBlack = 0;
+  ArrayList<Piece> c1 = new ArrayList<Piece>();
+  ArrayList<Piece> c2 = new ArrayList<Piece>();
+  ArrayList<Piece> c3 = new ArrayList<Piece>();
+  ArrayList<Piece> c4 = new ArrayList<Piece>();
+  ArrayList<Piece> c5 = new ArrayList<Piece>();
+  ArrayList<Piece> c6 = new ArrayList<Piece>();
+  ArrayList<Piece> c7 = new ArrayList<Piece>();
+>>>>>>> 07d7f5e162bf1bfab2a90dfe1d7d54640dcef743
 public class Piece {
   private int col; //0 for black and 1 for red
   private int x;
