@@ -24,6 +24,11 @@ void setup(){
       rect(i, j, 50, 50);
     }
   }
+  fill(color(255, 255, 51));
+  rect(450, 125, 100, 50);
+  fill(color(0, 0, 0));
+  textSize(32);
+  text("reset", 460, 160);
 }
 
 void draw(){
@@ -130,6 +135,10 @@ void mouseClicked(){
       textSize(20);
       text("Please choose a column that is not full.", 25, 50);
     }
+  }
+  else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
+    clear();
+    setup();
   }
 }
 

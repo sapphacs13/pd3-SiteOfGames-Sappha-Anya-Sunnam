@@ -6,3 +6,4 @@ Date - Name - What you did
 6/3-4 - Anya - Resized things, added new row, created way to logically add pieces to the board
 6/6 - Sappha - Reformatted the if statements to condense code
 6/6 - Anya - Added statements to prevent circles from going off the board
+6/9 - Sappha - Added reset button, but it doesn't quite reset
