@@ -1,6 +1,7 @@
-
 //true if it's the users turn (not the computers)
 boolean yourturn = true;
+int numRed = 0;
+int numBlack = 0;
 ArrayList<Piece> c1 = new ArrayList<Piece>();
 ArrayList<Piece> c2 = new ArrayList<Piece>();
 ArrayList<Piece> c3 = new ArrayList<Piece>();
@@ -16,7 +17,7 @@ void setup(){
   //setup background
   size(600, 400);
   background(color(0, 0, 255));
-  //setup
+  //setup grid
   for (int i = 50; i <= 350; i += 50){
     for (int j = 50; j <= 300; j += 50){
       fill(color(255, 255, 51));
@@ -26,15 +27,25 @@ void setup(){
 }
 
 void draw(){
+  
+  if (numBlack > numRed){
+    yourturn = true;
+  }
+  else{
+    yourturn = false;
+  }
+  
 }
   
+
 void mouseClicked(){
   if(yourturn == true) {
-    fill (color (255, 0, 0));
+    fill (color (0, 0, 0));
+    numRed ++;
   }
   else {
-    //CHANGE THIS TO RED
-    fill(color(0, 0, 0));
+    fill(color(255, 0, 0));
+    numBlack ++;
   }
   if (mouseX > 50 && mouseX < 100 && c1.size() < 6){
     Piece p = new Piece();
@@ -71,7 +82,6 @@ void mouseClicked(){
     ellipse(376, 325-(c7.size()*50), 40, 40);
     c7.add(p);
   }
-  yourturn = false;
 }
 
 
@@ -82,6 +92,4 @@ void mouseClicked(){
   }
   
 }*/
-
-
 
