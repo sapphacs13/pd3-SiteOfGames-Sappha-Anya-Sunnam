@@ -76,7 +76,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 100 && mouseX < 150) {
+  else if (mouseX > 100 && mouseX < 150) {
     if(c2.size() < 6) {
       Piece p = new Piece();
       ellipse(126, 325-(c2.size()*50), 40, 40);
@@ -88,7 +88,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 150 && mouseX < 200) {
+  else if (mouseX > 150 && mouseX < 200) {
     if(c3.size() < 6) {
       Piece p = new Piece();
       ellipse(176, 325-(c3.size()*50), 40, 40);
@@ -100,7 +100,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 200 && mouseX < 250) {
+  else if (mouseX > 200 && mouseX < 250) {
     if(c4.size() < 6) {
       Piece p = new Piece();
       ellipse(226, 325-(c4.size()*50), 40, 40);
@@ -112,7 +112,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 250 && mouseX < 300) {
+  else if (mouseX > 250 && mouseX < 300) {
     if(c5.size() < 6) {
       Piece p = new Piece();
       ellipse(276, 325-(c5.size()*50), 40, 40);
@@ -124,7 +124,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 300 && mouseX < 350) {
+  else if (mouseX > 300 && mouseX < 350) {
     if(c6.size() < 6) {
       Piece p = new Piece();
       ellipse(326, 325-(c6.size()*50), 40, 40);
@@ -136,7 +136,7 @@ void mouseClicked(){
       text("Please choose a column that is not full.", 25, 50);
     }
   }
-  if (mouseX > 350 && mouseX < 400) {
+  else if (mouseX > 350 && mouseX < 400) {
     if(c7.size() < 6) {
       Piece p = new Piece();
       ellipse(376, 325-(c7.size()*50), 40, 40);
