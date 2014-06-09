@@ -89,6 +89,7 @@ void mouseClicked(){
     c7.add(p);
   }
   else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
+    clear();
     setup();
   }
 }
