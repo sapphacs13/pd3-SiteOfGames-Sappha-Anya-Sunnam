@@ -25,6 +25,11 @@ void setup(){
       rect(i, j, 50, 50);
     }
   }
+  fill(color(255, 255, 51));
+  rect(450, 125, 100, 50);
+  fill(color(0, 0, 0));
+  textSize(32);
+  text("reset", 460, 160);
 }
 
 void draw(){
@@ -82,6 +87,9 @@ void mouseClicked(){
     Piece p = new Piece();
     ellipse(376, 325-(c7.size()*50), 40, 40);
     c7.add(p);
+  }
+  else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
+    setup();
   }
 }
 
