@@ -1,20 +1,31 @@
-
 //true if it's the users turn (not the computers)
-boolean yourturn = true;
-int numRed = 0;
-int numBlack = 0;
-ArrayList<Piece> c1 = new ArrayList<Piece>();
-ArrayList<Piece> c2 = new ArrayList<Piece>();
-ArrayList<Piece> c3 = new ArrayList<Piece>();
-ArrayList<Piece> c4 = new ArrayList<Piece>();
-ArrayList<Piece> c5 = new ArrayList<Piece>();
-ArrayList<Piece> c6 = new ArrayList<Piece>();
-ArrayList<Piece> c7 = new ArrayList<Piece>();
-
+  boolean yourturn = true;
+  int numRed = 0;
+  int numBlack = 0;
+  ArrayList<Piece> c1 = new ArrayList<Piece>();
+  ArrayList<Piece> c2 = new ArrayList<Piece>();
+  ArrayList<Piece> c3 = new ArrayList<Piece>();
+  ArrayList<Piece> c4 = new ArrayList<Piece>();
+  ArrayList<Piece> c5 = new ArrayList<Piece>();
+  ArrayList<Piece> c6 = new ArrayList<Piece>();
+  ArrayList<Piece> c7 = new ArrayList<Piece>();
 public class Piece {
 }
 
 void setup(){
+  //reset
+  clear();
+  yourturn = true;
+  numRed = 0;
+  numBlack = 0;
+  c1 = new ArrayList<Piece>();
+  c2 = new ArrayList<Piece>();
+  c3 = new ArrayList<Piece>();
+  c4 = new ArrayList<Piece>();
+  c5 = new ArrayList<Piece>();
+  c6 = new ArrayList<Piece>();
+  c7 = new ArrayList<Piece>();
+  
   //setup background
   size(600, 400);
   background(color(0, 0, 255));
@@ -89,7 +100,6 @@ void mouseClicked(){
     c7.add(p);
   }
   else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
-    clear();
     setup();
   }
 }
