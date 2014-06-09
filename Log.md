@@ -7,3 +7,4 @@ Date - Name - What you did
 6/6 - Sappha - Reformatted the if statements to condense code
 6/6 - Anya - Added statements to prevent circles from going off the board
 6/9 - Sappha - Added reset button, but it doesn't quite reset
+6/9 - Anya - Made alternation of the color of pieces work properlly, prompts the user to choose a colum with free slots
