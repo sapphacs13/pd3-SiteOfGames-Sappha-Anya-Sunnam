@@ -128,7 +128,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
   }
   if (n == 0){
    if(c1.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 76, 325-(c1.size()*50));
         ellipse(76, 325-(c1.size()*50), 40, 40);
         c1.add(p);
         yourturn = !yourturn;
@@ -140,7 +140,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 1){
    if(c2.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 126, 325-(c2.size()*50));
         ellipse(126, 325-(c2.size()*50), 40, 40);
         c2.add(p);
         yourturn = !yourturn;
@@ -152,7 +152,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 2){
    if(c3.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 176, 325-(c3.size()*50));
         ellipse(176, 325-(c3.size()*50), 40, 40);
         c3.add(p);
         yourturn = !yourturn;
@@ -164,7 +164,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 3){
    if(c4.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 226, 325-(c4.size()*50));
         ellipse(226, 325-(c4.size()*50), 40, 40);
         c4.add(p);
         yourturn = !yourturn;
@@ -176,7 +176,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 4){
    if(c5.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 276, 325-(c5.size()*50));
         ellipse(276, 325-(c5.size()*50), 40, 40);
         c5.add(p);
         yourturn = !yourturn;
@@ -188,7 +188,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 5){
    if(c6.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 326, 325-(c6.size()*50));
         ellipse(326, 325-(c6.size()*50), 40, 40);
         c6.add(p);
         yourturn = !yourturn;
@@ -200,7 +200,7 @@ void place(int n, int c){//MUST FIX SUCH THAT THE NUMRED AND NUMBLACK DO NOT KEE
  }
  else if (n == 6){
    if(c7.size() < 6) {
-        Piece p = new Piece();
+        Piece p = new Piece(numRed-numBlack, 376, 325-(c7.size()*50));
         ellipse(376, 325-(c7.size()*50), 40, 40);
         c7.add(p);
         yourturn = !yourturn;
