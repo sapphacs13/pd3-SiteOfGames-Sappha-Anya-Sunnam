@@ -1,3 +1,5 @@
+//Blah blah blah blah testing
+
 //true if it's the users turn (not the computers)
 boolean yourturn;
 int numRed;
