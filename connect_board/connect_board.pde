@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 //true if it's the users turn (not the computers)
->>>>>>> 6ed639d2cfd440578e1f6e062b2883b8faffd1c0
 boolean yourturn;
 int numRed;
 int numBlack;
@@ -198,92 +195,33 @@ void mouseClicked(){
   if(yourturn == true) {
     if (mouseX > 50 && mouseX < 100) {
       place(0, 1);
-<<<<<<< HEAD
-=======
-  if (mouseX > 50 && mouseX < 100) {
-    if(c1.size() < 6) {
-      Piece p = new Piece(numRed-numBlack, 76, 325-(c1.size()*50));
-      ellipse(76, 325-(c1.size()*50), 40, 40);
-      c1.add(p);
-      yourturn = !yourturn;
     }
-    else {
-      textSize(20);
-      text("Please choose a column that is not full.", 25, 50);
->>>>>>> 6ed639d2cfd440578e1f6e062b2883b8faffd1c0
-    }
-  if (mouseX > 50 && mouseX < 100) {
-    place(1, 1);
-  }
-  else if (mouseX > 100 && mouseX < 150) {
-    place(2, 1);
-  }
-  else if (mouseX > 150 && mouseX < 200) {
-    place(3, 1);
-  }
-  else if (mouseX > 200 && mouseX < 250) {
-<<<<<<< HEAD
-    place(4, 1);
-  }
-  else if (mouseX > 250 && mouseX < 300) {
-    place(5, 1);
-  }
-  else if (mouseX > 300 && mouseX < 350) {
-      place(6, 1);
-  }
-  else if (mouseX > 350 && mouseX < 400) {
-    place(7, 1);
-  }
-  else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
-=======
-    if(c4.size() < 6) {
-      Piece p = new Piece(numRed-numBlack, 226, 325-(c4.size()*50));
-      ellipse(226, 325-(c4.size()*50), 40, 40);
-      c4.add(p);
-      yourturn = !yourturn;
-    }
-    else if (mouseX > 100 && mouseX < 150) {
+    if (mouseX > 50 && mouseX < 100) {
       place(1, 1);
     }
-    else if (mouseX > 150 && mouseX < 200) {
+    else if (mouseX > 100 && mouseX < 150) {
       place(2, 1);
-  }
-  else if (mouseX > 250 && mouseX < 300) {
-    if(c5.size() < 6) {
-      Piece p = new Piece(numRed-numBlack, 276, 325-(c5.size()*50));
-      ellipse(276, 325-(c5.size()*50), 40, 40);
-      c5.add(p);
-      yourturn = !yourturn;
     }
-    else if (mouseX > 200 && mouseX < 250) {
+    else if (mouseX > 150 && mouseX < 200) {
       place(3, 1);
     }
-    else if (mouseX > 250 && mouseX < 300) {
+    else if (mouseX > 200 && mouseX < 250) {
       place(4, 1);
-  }
-  else if (mouseX > 300 && mouseX < 350) {
-    if(c6.size() < 6) {
-      Piece p = new Piece(numRed-numBlack, 326, 325-(c6.size()*50));
-      ellipse(326, 325-(c6.size()*50), 40, 40);
-      c6.add(p);
-      yourturn = !yourturn;
     }
-    else if (mouseX > 300 && mouseX < 350) {
+    else if (mouseX > 250 && mouseX < 300) {
       place(5, 1);
     }
+    else if (mouseX > 300 && mouseX < 350) {
+        place(6, 1);
+    }
     else if (mouseX > 350 && mouseX < 400) {
-      place(6, 1);
-  }
-  else if (mouseX > 350 && mouseX < 400) {
-    if(c7.size() < 6) {
-      Piece p = new Piece(numRed-numBlack, 376, 325-(c7.size()*50));
-      ellipse(376, 325-(c7.size()*50), 40, 40);
-      c7.add(p);
-      yourturn = !yourturn;
+      place(7, 1);
     }
     else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
->>>>>>> 6ed639d2cfd440578e1f6e062b2883b8faffd1c0
+    
+    }
+    else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
       setup();
+    }
   }
-}
 }
