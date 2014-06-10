@@ -11,3 +11,4 @@ Date - Name - What you did
 6/9 - Anya - Created a way to keep track of color and location of pieces
 6/9 - Sappha - Added a place() method for both red and black, and condensed mouseClicked() but it fails to work when a column is filled by the user. Have not looked over Anya's new code yet. Most likely must merge ideas.
 6/10 - Sunnam - Made it run by using the history to unbreak the code.
+6/10 - Sappha/Anya/Sunnam - Together, we have (hopefully) fixed all merge conflicts and the code (I think) compiles correctly
