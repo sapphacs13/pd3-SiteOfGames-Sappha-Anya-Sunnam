@@ -70,16 +70,48 @@ void setup(){
 void draw(){
   if (numBlack < numRed){
     computerTurn();
-    win(0);
   }
   else{
-    win(1);
+  }
+  winV();
+}
+
+/*void win(int c, int times){
+  for (int i = 0; i < 7; i ++){
+    try{
+      if (c1.get(i).getCol() == c){
+        win(c, times, c1.get(i));
+        break;
+      }
+      if (c2.get(i).getCol() == c){
+        win(c, times, c2.get(i));
+        break;
+      }
+      if (c3.get(i).getCol() == c){
+        win(c, times, c3.get(i));
+        break;
+      }
+    }
+    catch(Exception e){
+    }
   }
 }
 
-void win(int c){
-   print(c);
-   if ()
+void win(int c, int times, Piece p){
+   //print(c);
+   print(p);
+   
+}*/
+
+void winV(){
+  for (int i = 0; i < 3; i ++){
+    if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
+        c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
+        c1.get(i+2).getCol() == c1.get(i+3).getCol()){
+          print(c1.get(i).getCol());
+          print("wins");
+        }
+  }
 }
 
 void computerTurn(){
