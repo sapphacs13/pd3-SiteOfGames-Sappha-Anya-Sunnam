@@ -10,10 +10,8 @@ Date - Name - What you did
 6/9 - Anya - Made alternation of the color of pieces work properlly, prompts the user to choose a column with free slots (help from Sunnam)
 6/9 - Anya - Created a way to keep track of color and location of pieces
 6/9 - Sappha - Added a place() method for both red and black, and condensed mouseClicked() but it fails to work when a column is filled by the user. Have not looked over Anya's new code yet. Most likely must merge ideas.
-<<<<<<< HEAD
 6/9 - Sunnam - tried to fix the weird bugs that had resulted from the merge of Sappha and Anya's codes
-=======
 6/10 - Sunnam - Made it run by using the history to unbreak the code.
 6/10 - Sappha/Anya/Sunnam - Together, we have (hopefully) fixed all merge conflicts and the code (I think) compiles correctly
 6/10 - Sunnam - Fixed reset button, works completely now. Also made it so that if a column is full, it will not count an extra black/red piece on the board.
-6/10 - Anya - Corrected the place that pieces were added to. Pieces are now aded to the column that is clicked on.
+6/10 - Anya/Sappha - Corrected the place that pieces were added to. Pieces are now aded to the column that is clicked on.
