@@ -64,6 +64,7 @@ void setup(){
   fill(color(0, 0, 0));
   textSize(32);
   text("reset", 460, 160);
+  noStroke();
 }
 
 void draw(){
@@ -109,7 +110,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-   
+        for(int x = 0; x < 1000000000; x++) {
+        
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -131,7 +136,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+        for(int x = 0; x < 1000000000; x++) {
         
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -152,7 +161,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+        for(int x = 0; x < 1000000000; x++) {
         
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -173,7 +186,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+        for(int x = 0; x < 1000000000; x++) {
         
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -194,7 +211,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+        for(int x = 0; x < 1000000000; x++) {
         
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -215,7 +236,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+        for(int x = 0; x < 1000000000; x++) {
         
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
@@ -236,7 +261,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        
+        for(int x = 0; x < 1000000000; x++) {
+          
+        }
+        fill(color(0, 0, 255));
+        rect(10, 25, 400, 25);
         if (c == 0) {
           numBlack--;
         }
