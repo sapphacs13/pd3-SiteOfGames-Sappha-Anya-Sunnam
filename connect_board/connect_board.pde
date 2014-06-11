@@ -261,23 +261,23 @@ void mouseClicked(){
     if (mouseX > 50 && mouseX < 100) {
       place(0, 1);
     }
-    if (mouseX > 50 && mouseX < 100) {
+    if (mouseX > 100 && mouseX < 150) {
       place(1, 1);
     }
-    else if (mouseX > 100 && mouseX < 150) {
+    else if (mouseX > 150 && mouseX < 200) {
       place(2, 1);
     }
-    else if (mouseX > 150 && mouseX < 200) {
+    else if (mouseX > 200 && mouseX < 250) {
       place(3, 1);
     }
-    else if (mouseX > 200 && mouseX < 250) {
+    else if (mouseX > 250 && mouseX < 300) {
       place(4, 1);
     }
-    else if (mouseX > 250 && mouseX < 300) {
+    else if (mouseX > 300 && mouseX < 350) {
       place(5, 1);
     }
-    else if (mouseX > 300 && mouseX < 350) {
-        place(6, 1);
+    else if (mouseX > 350 && mouseX < 400) {
+      place(6, 1);
     }
     /*
     else if (mouseX > 350 && mouseX < 400) {
