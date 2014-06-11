@@ -67,25 +67,22 @@ void setup(){
 }
 
 void draw(){
-  
-  /*if (numBlack > numRed){
-    yourturn = true;
-  }
-  else{
-    yourturn = false;
-  }*/
-  
   if (numBlack < numRed){
     computerTurn();
+    win(0);
   }
   else{
+    win(1);
   }
-  
+}
+
+void win(int c){
+   print(c);
+   if ()
 }
 
 void computerTurn(){
   int x = (int)random(7);
-  //print(x);
   place(x, 0);
 }
   
@@ -250,7 +247,6 @@ void place(int n, int c){
         //print(numRed);
       }
  }
- 
  else{
    print("wrong col");
  }
@@ -279,13 +275,6 @@ void mouseClicked(){
     else if (mouseX > 350 && mouseX < 400) {
       place(6, 1);
     }
-    /*
-    else if (mouseX > 350 && mouseX < 400) {
-      place(7, 1);
-    }
-    n will only ever go up to 6 according to the place method
-    */
-   
     else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
       setup();
     }
