@@ -170,6 +170,18 @@ void winV(){
   }
 }
 
+void winH(){
+ for(int i = 0; i < 6; i ++){
+   try{
+     if (c1.get(i).getCol() == c2.get(i).getCol() &&
+         c2.get(i).getCol() == c3.get(i).getCol() &&
+         c3.get(i).getCol() == c4.get(i).getCol()){
+         }
+ } 
+  
+}
+
+
 void computerTurn(){
   int x = (int)random(7);
   place(x, 0);
@@ -370,6 +382,9 @@ void place(int n, int c){
 }
 
 void mouseClicked(){
+  if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
+      setup();
+  }
   if(yourturn == true) {
     if (mouseX > 50 && mouseX < 100) {
       place(0, 1);
@@ -392,11 +407,10 @@ void mouseClicked(){
     else if (mouseX > 350 && mouseX < 400) {
       place(6, 1);
     }
-    else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
-      setup();
-    }
+    winV();
   }
-  winV();
-  computerTurn();
-  winV();
+  if (yourturn == false){
+    computerTurn();
+    winV();
+  }
 }
