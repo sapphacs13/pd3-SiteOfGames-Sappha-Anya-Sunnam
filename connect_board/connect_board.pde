@@ -64,16 +64,15 @@ void setup(){
   fill(color(0, 0, 0));
   textSize(32);
   text("reset", 460, 160);
-  noStroke();
 }
 
 void draw(){
-  if (numBlack < numRed){
+  /*if (numBlack < numRed){
     computerTurn();
   }
   else{
   }
-  winV();
+  winV();*/
 }
 
 /*void win(int c, int times){
@@ -105,12 +104,17 @@ void win(int c, int times, Piece p){
 
 void winV(){
   for (int i = 0; i < 3; i ++){
-    if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
-        c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
-        c1.get(i+2).getCol() == c1.get(i+3).getCol()){
-          print(c1.get(i).getCol());
-          print("wins");
-        }
+    try{
+      if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
+          c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
+          c1.get(i+2).getCol() == c1.get(i+3).getCol()){
+            print(c1.get(i).getCol());
+            print("wins");
+          }
+      
+    }
+    catch(Exception e){
+    }
   }
 }
 
@@ -340,4 +344,7 @@ void mouseClicked(){
       setup();
     }
   }
+  winV();
+  computerTurn();
+  winV();
 }
