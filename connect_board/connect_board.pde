@@ -111,9 +111,61 @@ void winV(){
             print(c1.get(i).getCol());
             print("wins");
           }
-      
+    }catch(Exception e){
     }
-    catch(Exception e){
+    try{
+      if (c2.get(i).getCol() == c2.get(i+1).getCol() &&
+          c2.get(i+1).getCol() == c2.get(i+2).getCol() &&
+          c2.get(i+2).getCol() == c2.get(i+3).getCol()){
+            print(c2.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c3.get(i).getCol() == c3.get(i+1).getCol() &&
+          c3.get(i+1).getCol() == c3.get(i+2).getCol() &&
+          c3.get(i+2).getCol() == c3.get(i+3).getCol()){
+            print(c3.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c4.get(i).getCol() == c4.get(i+1).getCol() &&
+          c4.get(i+1).getCol() == c4.get(i+2).getCol() &&
+          c4.get(i+2).getCol() == c4.get(i+3).getCol()){
+            print(c4.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c5.get(i).getCol() == c5.get(i+1).getCol() &&
+          c5.get(i+1).getCol() == c5.get(i+2).getCol() &&
+          c5.get(i+2).getCol() == c5.get(i+3).getCol()){
+            print(c5.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c6.get(i).getCol() == c6.get(i+1).getCol() &&
+          c6.get(i+1).getCol() == c6.get(i+2).getCol() &&
+          c6.get(i+2).getCol() == c6.get(i+3).getCol()){
+            print(c6.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c7.get(i).getCol() == c7.get(i+1).getCol() &&
+          c7.get(i+1).getCol() == c7.get(i+2).getCol() &&
+          c7.get(i+2).getCol() == c7.get(i+3).getCol()){
+            print(c7.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
     }
   }
 }
