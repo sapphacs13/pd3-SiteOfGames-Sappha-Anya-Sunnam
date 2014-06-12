@@ -68,25 +68,54 @@ void setup(){
 }
 
 void draw(){
-  
-  /*if (numBlack > numRed){
-    yourturn = true;
-  }
-  else{
-    yourturn = false;
-  }*/
-  
   if (numBlack < numRed){
     computerTurn();
   }
   else{
   }
-  
+  winV();
+}
+
+/*void win(int c, int times){
+  for (int i = 0; i < 7; i ++){
+    try{
+      if (c1.get(i).getCol() == c){
+        win(c, times, c1.get(i));
+        break;
+      }
+      if (c2.get(i).getCol() == c){
+        win(c, times, c2.get(i));
+        break;
+      }
+      if (c3.get(i).getCol() == c){
+        win(c, times, c3.get(i));
+        break;
+      }
+    }
+    catch(Exception e){
+    }
+  }
+}
+
+void win(int c, int times, Piece p){
+   //print(c);
+   print(p);
+   
+}*/
+
+void winV(){
+  for (int i = 0; i < 3; i ++){
+    if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
+        c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
+        c1.get(i+2).getCol() == c1.get(i+3).getCol()){
+          print(c1.get(i).getCol());
+          print("wins");
+        }
+  }
 }
 
 void computerTurn(){
   int x = (int)random(7);
-  //print(x);
   place(x, 0);
 }
   
@@ -279,7 +308,6 @@ void place(int n, int c){
         //print(numRed);
       }
  }
- 
  else{
    print("wrong col");
  }
@@ -308,13 +336,6 @@ void mouseClicked(){
     else if (mouseX > 350 && mouseX < 400) {
       place(6, 1);
     }
-    /*
-    else if (mouseX > 350 && mouseX < 400) {
-      place(7, 1);
-    }
-    n will only ever go up to 6 according to the place method
-    */
-   
     else if (mouseX > 450 && mouseX < 550 && mouseY > 125 && mouseY < 175){
       setup();
     }
