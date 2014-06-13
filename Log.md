@@ -15,4 +15,6 @@ Date - Name - What you did
 6/10 - Sappha/Anya/Sunnam - Together, we have (hopefully) fixed all merge conflicts and the code (I think) compiles correctly
 6/10 - Sunnam - Fixed reset button, works completely now. Also made it so that if a column is full, it will not count an extra black/red piece on the board.
 6/10 - Anya/Sappha - Corrected the place that pieces were added to. Pieces are now aded to the column that is clicked on.
-6/10 = Anya - attempted to fix the deletion of the text.
+6/10 - Anya - attempted to fix the deletion of the text.
+6/11 - Sappha - completed winV(), but it only prints win and does not stop the game. Also, if you click reset, computerTurn() is run.
+6/11 - Sappha - So winH is done, but it doesn't work and I don't know why. The mouseClicked reset thing I broke earlier is fixed. Also, we still need a method to end the game. I hope someone reads these things.
