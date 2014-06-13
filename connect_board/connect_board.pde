@@ -9,6 +9,8 @@ ArrayList<Piece> c4;
 ArrayList<Piece> c5;
 ArrayList<Piece> c6;
 ArrayList<Piece> c7;
+int time;
+int wait = 1000;
 
 public class Piece {
   private int col; //0 for black and 1 for red
@@ -64,16 +66,15 @@ void setup(){
   fill(color(0, 0, 0));
   textSize(32);
   text("reset", 460, 160);
-  noStroke();
 }
 
 void draw(){
-  if (numBlack < numRed){
+  /*if (numBlack < numRed){
     computerTurn();
   }
   else{
   }
-  winV();
+  winV();*/
 }
 
 /*void win(int c, int times){
@@ -105,12 +106,72 @@ void win(int c, int times, Piece p){
 
 void winV(){
   for (int i = 0; i < 3; i ++){
-    if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
-        c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
-        c1.get(i+2).getCol() == c1.get(i+3).getCol()){
-          print(c1.get(i).getCol());
-          print("wins");
-        }
+    try{
+      time = millis();
+      if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
+          c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
+          c1.get(i+2).getCol() == c1.get(i+3).getCol()){
+            print(c1.get(i).getCol());
+            print("wins");
+            background(color(0, 255, 0));
+            text("you win", 40, 40);
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c2.get(i).getCol() == c2.get(i+1).getCol() &&
+          c2.get(i+1).getCol() == c2.get(i+2).getCol() &&
+          c2.get(i+2).getCol() == c2.get(i+3).getCol()){
+            print(c2.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c3.get(i).getCol() == c3.get(i+1).getCol() &&
+          c3.get(i+1).getCol() == c3.get(i+2).getCol() &&
+          c3.get(i+2).getCol() == c3.get(i+3).getCol()){
+            print(c3.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c4.get(i).getCol() == c4.get(i+1).getCol() &&
+          c4.get(i+1).getCol() == c4.get(i+2).getCol() &&
+          c4.get(i+2).getCol() == c4.get(i+3).getCol()){
+            print(c4.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c5.get(i).getCol() == c5.get(i+1).getCol() &&
+          c5.get(i+1).getCol() == c5.get(i+2).getCol() &&
+          c5.get(i+2).getCol() == c5.get(i+3).getCol()){
+            print(c5.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c6.get(i).getCol() == c6.get(i+1).getCol() &&
+          c6.get(i+1).getCol() == c6.get(i+2).getCol() &&
+          c6.get(i+2).getCol() == c6.get(i+3).getCol()){
+            print(c6.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
+    try{
+      if (c7.get(i).getCol() == c7.get(i+1).getCol() &&
+          c7.get(i+1).getCol() == c7.get(i+2).getCol() &&
+          c7.get(i+2).getCol() == c7.get(i+3).getCol()){
+            print(c7.get(i).getCol());
+            print("wins");
+          }
+    }catch(Exception e){
+    }
   }
 }
 
@@ -340,4 +401,7 @@ void mouseClicked(){
       setup();
     }
   }
+  winV();
+  computerTurn();
+  winV();
 }
