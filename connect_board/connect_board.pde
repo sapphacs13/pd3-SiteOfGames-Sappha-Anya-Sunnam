@@ -104,15 +104,15 @@ void win(int c, int times, Piece p){
    
 }*/
 
-void delay() {
+/*void delay() {
   time = millis();
   while(millis() - time < 2000) {
     println("");
   }
-}
+}*/
 
 void winV(){
-  /*for (int i = 0; i < 3; i ++){
+  for (int i = 0; i < 3; i ++){
     try{
       time = millis();
       if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
@@ -120,10 +120,17 @@ void winV(){
           c1.get(i+2).getCol() == c1.get(i+3).getCol()){
             print(c1.get(i).getCol());
             print("wins");
-            delay();
-            background(color(0, 0, 255));
-            delay();
-            setup();
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -133,6 +140,17 @@ void winV(){
           c2.get(i+2).getCol() == c2.get(i+3).getCol()){
             print(c2.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -142,6 +160,17 @@ void winV(){
           c3.get(i+2).getCol() == c3.get(i+3).getCol()){
             print(c3.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -151,6 +180,17 @@ void winV(){
           c4.get(i+2).getCol() == c4.get(i+3).getCol()){
             print(c4.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -160,6 +200,17 @@ void winV(){
           c5.get(i+2).getCol() == c5.get(i+3).getCol()){
             print(c5.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -169,6 +220,17 @@ void winV(){
           c6.get(i+2).getCol() == c6.get(i+3).getCol()){
             print(c6.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -178,10 +240,21 @@ void winV(){
           c7.get(i+2).getCol() == c7.get(i+3).getCol()){
             print(c7.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
-  }*/
+  }
 }
 
 void winH(){
@@ -254,7 +327,7 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -279,7 +352,7 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -304,7 +377,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -329,7 +402,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -354,7 +427,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -379,7 +452,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -404,7 +477,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        //delay();
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
