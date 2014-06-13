@@ -75,6 +75,7 @@ void draw(){
   winV();*/
 }
 
+<<<<<<< HEAD
 void win(int c, int times){
   for (int i = 0; i < 7; i ++){
     try{
@@ -106,6 +107,14 @@ void delay(int delay) {
   int time = millis();
   while(millis() - time <= delay);
 }
+=======
+/*void delay() {
+  time = millis();
+  while(millis() - time < 2000) {
+    println("");
+  }
+}*/
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
 
 void winV(){
   for (int i = 0; i < 3; i ++){
@@ -115,12 +124,26 @@ void winV(){
           c1.get(i+2).getCol() == c1.get(i+3).getCol()){
             print(c1.get(i).getCol());
             print("wins");
+<<<<<<< HEAD
             delay(1000);
             background(color(0, 0, 255));
             delay(1000);
             text("yay!", 50, 50);
             delay(1000);
             setup();
+=======
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
           }
     }catch(Exception e){
     }
@@ -130,6 +153,17 @@ void winV(){
           c2.get(i+2).getCol() == c2.get(i+3).getCol()){
             print(c2.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -139,6 +173,17 @@ void winV(){
           c3.get(i+2).getCol() == c3.get(i+3).getCol()){
             print(c3.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -148,6 +193,17 @@ void winV(){
           c4.get(i+2).getCol() == c4.get(i+3).getCol()){
             print(c4.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -157,6 +213,17 @@ void winV(){
           c5.get(i+2).getCol() == c5.get(i+3).getCol()){
             print(c5.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -166,6 +233,17 @@ void winV(){
           c6.get(i+2).getCol() == c6.get(i+3).getCol()){
             print(c6.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -175,6 +253,17 @@ void winV(){
           c7.get(i+2).getCol() == c7.get(i+3).getCol()){
             print(c7.get(i).getCol());
             print("wins");
+            //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c7.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
           }
     }catch(Exception e){
     }
@@ -187,36 +276,80 @@ void winH(){
      if (c1.get(i).getCol() == c2.get(i).getCol() &&
          c2.get(i).getCol() == c3.get(i).getCol() &&
          c3.get(i).getCol() == c4.get(i).getCol()){
-         }
          print(c1.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c1.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c2.get(i).getCol() == c3.get(i).getCol() &&
          c3.get(i).getCol() == c4.get(i).getCol() &&
          c4.get(i).getCol() == c5.get(i).getCol()){
-         }
          print(c2.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c2.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c3.get(i).getCol() == c4.get(i).getCol() &&
          c4.get(i).getCol() == c5.get(i).getCol() &&
          c5.get(i).getCol() == c6.get(i).getCol()){
-         }
          print(c3.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c3.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c4.get(i).getCol() == c5.get(i).getCol() &&
          c5.get(i).getCol() == c6.get(i).getCol() &&
          c6.get(i).getCol() == c7.get(i).getCol()){
-         }
          print(c4.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c4.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
  }
@@ -251,7 +384,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -276,7 +413,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -301,7 +442,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -326,7 +471,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -351,7 +500,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -376,7 +529,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -401,7 +558,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
+<<<<<<< HEAD
         delay(1000);
+=======
+        //delay();
+>>>>>>> e57712b002dbaa65de1faa39bcba1c1ee1966065
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
