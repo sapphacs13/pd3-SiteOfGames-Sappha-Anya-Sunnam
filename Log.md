@@ -19,3 +19,5 @@ Date - Name - What you did
 6/11 - Sappha - completed winV(), but it only prints win and does not stop the game. Also, if you click reset, computerTurn() is run.
 6/11 - Sappha - So winH is done, but it doesn't work and I don't know why. The mouseClicked reset thing I broke earlier is fixed. Also, we still need a method to end the game. I hope someone reads these things.
 6/12 - Anya - I created the delay method and placed it in certain places. The win methods mess the game up a bit, but we'll figure that out. Go Team SAS!
+6/12 - Sunnam - Had trouble running it a lot (kept crashing). Still testing and figuring out how to fix winV() and winH()
+
