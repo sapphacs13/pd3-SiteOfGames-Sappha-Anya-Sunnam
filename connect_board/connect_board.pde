@@ -77,33 +77,6 @@ void draw(){
   winV();*/
 }
 
-/*void win(int c, int times){
-  for (int i = 0; i < 7; i ++){
-    try{
-      if (c1.get(i).getCol() == c){
-        win(c, times, c1.get(i));
-        break;
-      }
-      if (c2.get(i).getCol() == c){
-        win(c, times, c2.get(i));
-        break;
-      }
-      if (c3.get(i).getCol() == c){
-        win(c, times, c3.get(i));
-        break;
-      }
-    }
-    catch(Exception e){
-    }
-  }
-}
-
-void win(int c, int times, Piece p){
-   //print(c);
-   print(p);
-   
-}*/
-
 /*void delay() {
   time = millis();
   while(millis() - time < 2000) {
@@ -258,44 +231,88 @@ void winV(){
 }
 
 void winH(){
- /*for(int i = 0; i < 6; i ++){
+ for(int i = 0; i < 6; i ++){
    try{
      if (c1.get(i).getCol() == c2.get(i).getCol() &&
          c2.get(i).getCol() == c3.get(i).getCol() &&
          c3.get(i).getCol() == c4.get(i).getCol()){
-         }
          print(c1.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c1.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c2.get(i).getCol() == c3.get(i).getCol() &&
          c3.get(i).getCol() == c4.get(i).getCol() &&
          c4.get(i).getCol() == c5.get(i).getCol()){
-         }
          print(c2.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c2.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c3.get(i).getCol() == c4.get(i).getCol() &&
          c4.get(i).getCol() == c5.get(i).getCol() &&
          c5.get(i).getCol() == c6.get(i).getCol()){
-         }
          print(c3.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c3.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
    try{
      if (c4.get(i).getCol() == c5.get(i).getCol() &&
          c5.get(i).getCol() == c6.get(i).getCol() &&
          c6.get(i).getCol() == c7.get(i).getCol()){
-         }
          print(c4.get(i).getCol());
          print("wins");
+         //delay();
+            background(color(0, 0, 0));
+            fill(color(255, 255, 255));
+            textSize(32);
+            if (c4.get(i).getCol() == 1){
+              text("YOU WON!!", 200, 200);
+            }else{
+              text("YOU LOST!!", 200, 200);
+            }
+            //delay();
+            //setup();
+         }
    }catch (Exception e){
    }
- }*/
+ }
 }
 
 
