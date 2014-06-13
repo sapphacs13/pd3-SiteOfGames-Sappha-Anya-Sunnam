@@ -104,8 +104,15 @@ void win(int c, int times, Piece p){
    
 }*/
 
+void delay() {
+  time = millis();
+  while(millis() - time < 2000) {
+    println("");
+  }
+}
+
 void winV(){
-  for (int i = 0; i < 3; i ++){
+  /*for (int i = 0; i < 3; i ++){
     try{
       time = millis();
       if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
@@ -113,8 +120,10 @@ void winV(){
           c1.get(i+2).getCol() == c1.get(i+3).getCol()){
             print(c1.get(i).getCol());
             print("wins");
-            background(color(0, 255, 0));
-            text("you win", 40, 40);
+            delay();
+            background(color(0, 0, 255));
+            delay();
+            setup();
           }
     }catch(Exception e){
     }
@@ -172,11 +181,11 @@ void winV(){
           }
     }catch(Exception e){
     }
-  }
+  }*/
 }
 
 void winH(){
- for(int i = 0; i < 6; i ++){
+ /*for(int i = 0; i < 6; i ++){
    try{
      if (c1.get(i).getCol() == c2.get(i).getCol() &&
          c2.get(i).getCol() == c3.get(i).getCol() &&
@@ -213,7 +222,7 @@ void winH(){
          print("wins");
    }catch (Exception e){
    }
- }
+ }*/
 }
 
 
@@ -245,12 +254,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -271,11 +279,11 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -296,11 +304,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -321,11 +329,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -346,11 +354,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -371,11 +379,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-        
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
@@ -396,11 +404,11 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        for(int x = 0; x < 1000000000; x++) {
-          
-        }
+        delay();
+        noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
+        stroke(0);
         if (c == 0) {
           numBlack--;
         }
