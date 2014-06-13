@@ -9,8 +9,6 @@ ArrayList<Piece> c4;
 ArrayList<Piece> c5;
 ArrayList<Piece> c6;
 ArrayList<Piece> c7;
-int time;
-int wait = 1000;
 
 public class Piece {
   private int col; //0 for black and 1 for red
@@ -77,7 +75,7 @@ void draw(){
   winV();*/
 }
 
-/*void win(int c, int times){
+void win(int c, int times){
   for (int i = 0; i < 7; i ++){
     try{
       if (c1.get(i).getCol() == c){
@@ -102,27 +100,26 @@ void win(int c, int times, Piece p){
    //print(c);
    print(p);
    
-}*/
+}
 
-void delay() {
-  time = millis();
-  while(millis() - time < 2000) {
-    println("");
-  }
+void delay(int delay) {
+  int time = millis();
+  while(millis() - time <= delay);
 }
 
 void winV(){
-  /*for (int i = 0; i < 3; i ++){
+  for (int i = 0; i < 3; i ++){
     try{
-      time = millis();
       if (c1.get(i).getCol() == c1.get(i+1).getCol() &&
           c1.get(i+1).getCol() == c1.get(i+2).getCol() &&
           c1.get(i+2).getCol() == c1.get(i+3).getCol()){
             print(c1.get(i).getCol());
             print("wins");
-            delay();
+            delay(1000);
             background(color(0, 0, 255));
-            delay();
+            delay(1000);
+            text("yay!", 50, 50);
+            delay(1000);
             setup();
           }
     }catch(Exception e){
@@ -181,11 +178,11 @@ void winV(){
           }
     }catch(Exception e){
     }
-  }*/
+  }
 }
 
 void winH(){
- /*for(int i = 0; i < 6; i ++){
+ for(int i = 0; i < 6; i ++){
    try{
      if (c1.get(i).getCol() == c2.get(i).getCol() &&
          c2.get(i).getCol() == c3.get(i).getCol() &&
@@ -222,7 +219,7 @@ void winH(){
          print("wins");
    }catch (Exception e){
    }
- }*/
+ }
 }
 
 
@@ -254,7 +251,7 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -279,7 +276,7 @@ void place(int n, int c){
    else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -304,7 +301,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -329,7 +326,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -354,7 +351,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -379,7 +376,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -404,7 +401,7 @@ void place(int n, int c){
       else {
         textSize(20);
         text("Please choose a column that is not full.", 25, 50);
-        delay();
+        delay(1000);
         noStroke();
         fill(color(0, 0, 255));
         rect(10, 25, 400, 25);
@@ -450,12 +447,10 @@ void mouseClicked(){
     else if (mouseX > 350 && mouseX < 400) {
       place(6, 1);
     }
-    winV();
-    winH();
   }
   if (yourturn == false){
     computerTurn();
-    winV();
-    winH();
   }
+  winV();
+  winH();
 }
