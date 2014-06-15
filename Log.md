@@ -21,3 +21,4 @@ Date - Name - What you did
 6/12 - Anya - I created the delay method and placed it in certain places. The win methods mess the game up a bit, but we'll figure that out. Go Team SAS!
 6/12 - Sunnam - Had trouble running it a lot (kept crashing). Still testing and figuring out how to fix winV() and winH()
 6/13 - Anya - The delay method does not cause Processing to shut down any more!!!!!!!!! It doesn't work in the context that I want it to work in though.
+6/15 - Anya - Added 20Qs with a Node class.
