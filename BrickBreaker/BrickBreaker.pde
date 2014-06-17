@@ -1,4 +1,4 @@
-//Brick Breaker game by Anya Hargil
+
 //noStroke();
 //Sets the beginning position and direction of the ball
 int ballXpos = 200;
