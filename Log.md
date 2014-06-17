@@ -27,4 +27,4 @@ Date - Name - What you did
 6/15 - Anya - Added 20Qs with a Node class.
 6/15 - Sappha - Fixed winH()
 6/16 - Anya - Added Brick Breaker.
-6/16 - Sunnam - Added 20Q's
+6/16 - Sunnam - Finished 20 Questions game
