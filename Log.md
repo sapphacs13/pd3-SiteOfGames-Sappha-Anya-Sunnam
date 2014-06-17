@@ -28,3 +28,4 @@ Date - Name - What you did
 6/15 - Sappha - Fixed winH()
 6/16 - Anya - Added Brick Breaker.
 6/16 - Sunnam - Finished 20 Questions game
+6/16 - Sappha - Attempted to fix the delay() method (key word: attempted). Also messed around with the print statements to the control which we used for testing (they didn't seem to be working quite right).
