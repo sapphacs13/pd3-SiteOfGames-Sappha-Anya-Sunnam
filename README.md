@@ -11,6 +11,6 @@ Instructions: Under our repo, we have three separate folders for each game.
 
 What works: Every game runs and you are able to play them will functions given to you as the user. 
 
-What doesn't: We were not able to create a diagonal win in Connect Four (only a vertical and horizontal win). In addition, "20 Questions" is only 4 questions long, since we had to put in the input for each guess ourselves. Also, our project is called "Site of Games" because we originally wanted these games to be available for play on a webpage. However, we did not have enough time to do this.
+What doesn't: Connect Four: We were not able to create a diagonal win (only a vertical and horizontal win). The delay method messes things up a little bit, so all instances of it are commented out. Also, the print statemtents that we used to check out work don't seem to be printing at the right time, but the code seems to run correctly so I'm not sure what's going on there. "20 Questions" is only 4 questions long, since we had to put in the input for each guess ourselves. Lastly, our project is called "Site of Games" because we originally wanted these games to be available for play on a webpage. However, we did not have enough time to do this.
 
 Data structure highlights: In 20 Questions, we used a Binary Search Tree in order to organize which candy is under each category. By following the line of nodes, the computer is able to guess which candy the user is thinking of.
