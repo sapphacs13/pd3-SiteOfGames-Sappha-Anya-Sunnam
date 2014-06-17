@@ -38,9 +38,8 @@ public class Node {
 	return right; 
     }
 
-    //computer is ready to make a guess if there are no more questions
     public boolean isQuestion() {
-	if (left == null && right == null) {
+	if (this.getRight() == null && this.getLeft() == null){
 	    return false;
 	}
 	else {
@@ -49,37 +48,38 @@ public class Node {
     }
 
     public void questionTime() {
-	if (this.isQuestion()){
+	if (this.isQuestion()) {
 	    System.out.println(this.message);
-	    System.out.println("Enter 'y' for yes or 'n' for no");
 	    Scanner in = new Scanner(System.in);
 	    String answer;
 	    answer = in.nextLine();
-	    if (answer == "y") {
-		right.questionTime();
+	    if (answer.equals("y")) {
+		this.getRight().questionTime();
 	    }
 	    else {
-		left.questionTime();
+		this.getLeft().questionTime();
 	    }
 	}
 	else {
-	    this.makeGuess();
+	    Guess();
 	}
+	
     }
 
-    public void makeGuess(){
-	System.out.println("Were you thinking of " + this.message + "?");
-	System.out.println("Enter 'y' for yes or 'n' for no");
+    public void Guess() {
+	System.out.println("Is the candy you were thinking of " + this.message + "?");
 	Scanner in = new Scanner(System.in);
 	String answer;
 	answer = in.nextLine();
-	if (answer == "y") {
-	    System.out.println("The computer guessed correctly! You lose!");
+	if (answer.equals("y")) {
+	    System.out.println("The computer guessed your candy correctly! You lost!");
 	}
 	else {
-	    System.out.println("The computer was not able to guess your candy. You win!");
+	    System.out.println("The computer didn't guess your candy correctly! You won!");
 	}
     }
+  
+
     public static void main(String[] args) {
 	Node first = new Node("Does it have chocolate?");
 
@@ -181,6 +181,9 @@ public class Node {
 	//System.out.println(RRRL.getMessage());
 	//System.out.println(LRRL.getMessage());
 	//System.out.println(LRLL.getMessage());
+	System.out.println("Think of a candy! Now answer these simple questions to see if the computer can guess it!");
+	System.out.println("Enter 'y' for yes or 'n' for no");
+	first.questionTime();
 
     }
 }
