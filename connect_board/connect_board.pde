@@ -75,33 +75,6 @@ void draw(){
   winV();*/
 }
 
-void win(int c, int times){
-  for (int i = 0; i < 7; i ++){
-    try{
-      if (c1.get(i).getCol() == c){
-        win(c, times, c1.get(i));
-        break;
-      }
-      if (c2.get(i).getCol() == c){
-        win(c, times, c2.get(i));
-        break;
-      }
-      if (c3.get(i).getCol() == c){
-        win(c, times, c3.get(i));
-        break;
-      }
-    }
-    catch(Exception e){
-    }
-  }
-}
-
-void win(int c, int times, Piece p){
-   //print(c);
-   print(p);
-   
-}
-
 void delay(int delay) {
   int time = millis();
   while(millis() - time <= delay);
@@ -124,14 +97,7 @@ void winV(){
             print(c1.get(i).getCol());
             print("wins");
 
-            delay(1000);
-            background(color(0, 0, 255));
-            delay(1000);
-            text("yay!", 50, 50);
-            delay(1000);
-            setup();
-
-            //delay();
+            //delay(1000);
             background(color(0, 0, 0));
             fill(color(255, 255, 255));
             textSize(32);
