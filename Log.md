@@ -1,5 +1,7 @@
 Date - Name - What you did
 
+*Note: We worked on this project everyday in class, but always ended up using Sappha and Anya's computers. This is the reason for the uneven amount of commits for Sunnam.
+
 6/2 - Sunnam - Created the board (6 x 7) in Processing for Connect Four
 6/3 - Sappha - Reformatted board and added colors
 6/3 - Sunnam - Added booleans and fixed minor problems in drawing
@@ -25,3 +27,4 @@ Date - Name - What you did
 6/15 - Anya - Added 20Qs with a Node class.
 6/15 - Sappha - Fixed winH()
 6/16 - Anya - Added Brick Breaker.
+6/16 - Sunnam - Added 20Q's
